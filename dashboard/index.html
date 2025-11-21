@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productivity Dashboard</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Productivity Analytics Dashboard</h1>
+
+        <section class="summary">
+            <div class="card">
+                <h2>Total Time Today</h2>
+                <p id="totalTime">0 min</p>
+            </div>
+
+            <div class="card productive">
+                <h2>Productive Time</h2>
+                <p id="productiveTime">0 min</p>
+            </div>
+
+            <div class="card unproductive">
+                <h2>Unproductive Time</h2>
+                <p id="unproductiveTime">0 min</p>
+            </div>
+        </section>
+
+        <h2>Website Usage Today</h2>
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Website</th>
+                    <th>Time Spent (min)</th>
+                    <th>Category</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <h2>Weekly Usage Report</h2>
+        <canvas id="weeklyChart" width="400" height="200"></canvas>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
